@@ -9,3 +9,11 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:3003/api/blogs
+content-type: application/json
+
+{
+    "author": "sample",
+    "url": "sample",
+    "Likes": 25
+}
