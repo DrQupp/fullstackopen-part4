@@ -1,11 +1,12 @@
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY2ZTZkOTg2ODA2ZDhjOGVkNDFkYjgyOCIsImlhdCI6MTcyNjQwNzk1NH0.feP_jCwpUo5J5nCfiyWXdCyaVuQ_2m9z8pSQf14HVAU
 
 {
     "title": "sample23",
     "author": "sample",
     "url": "sample",
-    "Likes": 25
+    "likes": 25
 }
 
 ###
@@ -15,5 +16,11 @@ content-type: application/json
 {
     "author": "sample",
     "url": "sample",
-    "Likes": 25
+    "likes": 25
 }
+
+
+###
+DELETE http://localhost:3003/api/blogs/66e6ed5357f813d641ff2678
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY2ZTZkOTg2ODA2ZDhjOGVkNDFkYjgyOCIsImlhdCI6MTcyNjQwNzk1NH0.feP_jCwpUo5J5nCfiyWXdCyaVuQ_2m9z8pSQf14HVAU
